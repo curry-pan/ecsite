@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.item {
+  text-align: center;
+  margin: 10px 15px;
+  width: 240px;
+  height: 350px;
+}
+.shohin_h{
+  display: flex;
+}
+
+main {
+  clear: both;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem 0;
+  margin-top: 80px;
+}
+.shohin_img{
+  width: 220px;
+  height: 300px;
+  text-align: center;
+}
+
+.shohin{
+  margin-left: 10px;
+  margin-top: 26px;
+}
+
+.cart_inp {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 90px 0 -113px;
+}
+
+.favo_del{
+    font-size: 0.8rem;
+    width: 40px;
+    border: none;
+    z-index: 5;
+    position: relative;
+    top: -45px;
+    left: 85px;
+}
+
+.carta{
+  display: block;
+  height: 300px !important;
+}
+
+.ftitle{
+  position: relative;
+  top: -45px;
+}

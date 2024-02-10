@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#contact-container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc; /* 枠線を両サイドに広くする */
+    border-radius: 8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* フォームグループを縦に配置 */
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    margin-bottom: 5px; /* ラベル間のマージンを調整 */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* テキストボックスの横幅を100%に設定 */
+    padding: 16px; /* 修正: テキストボックスの内側の余白を広くする */
+    box-sizing: border-box;
+    font-size: 18px; /* 修正: テキストボックスの文字サイズを大きくする */
+    margin-bottom: 10px; /* 修正: テキストボックス間の余白を広くする */
+}
+
+.required {
+    color: red;
+    display: inline-block;
+    border: 1px solid red;
+    padding: 2px;
+    margin-right: 5px; /* 必須の文字とテキストボックスとの間隔を調整 */
+}
+
+#val {
+    height: 150px; /* 修正: お問い合わせ内容のテキストボックスの高さを広くする */
+}
+
+#submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: auto; /* ボタンを中央に配置 */
+}
+
+#submit-btn:hover {
+    background-color: #45a049;
+}

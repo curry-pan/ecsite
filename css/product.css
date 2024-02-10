@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.item {
+  text-align: center;
+  margin: 10px 15px;
+  width: 240px;
+}
+.shohin_h{
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: #fff;
+  padding: 1rem;
+  padding-left: 2rem;
+  width: 240px;
+  height: calc(100vh - 80px);
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sideul {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+
+.sideli {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+.txt{
+  display: inline-block;
+  width: 70%;
+  padding: 0.2em;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  margin: 0.5em 0;
+}
+
+main {
+  margin-top: 80px;
+}
+.shohin_img{
+  width: 220px;
+  height: 300px;
+  text-align: center;
+}
+
+.shohin{
+  margin-left: 240px;
+  margin-top: 20px;
+}
+
+.popup-window {
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  pointer-events : none;
+  transform: translate(-5px,-5px);
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+.popup-text {
+  margin: 0;
+}
+
+.popup-text:not(:last-of-type) {
+  margin-bottom: 1em
+}
+
+.popup-close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  pointer-events : auto;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+    transform: translate(-5px,-5px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-5px, 100px);
+    display: none;
+  }
+}
